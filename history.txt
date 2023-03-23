@@ -1,0 +1,8 @@
+   43  grep "France,2019,PHP" < "wilders.csv" | wc -l > php_france_2019.csv
+   44  grep "Toulouse" wilders.csv > Toulouse_Wilders.csv
+   45  grep "Biarritz" wilders.csv > Biarritz_Wilders.csv
+   46  grep "JavaScrip" Toulouse_Wilders.csv > Javascript_Toulouse_Wilders.csv
+   47  grep "JavaScrip" Biarritz_Wilders.csv > Javascript_Biarritz_Wilders.csv
+   48  cat "Javascript_Toulouse_Wilders.csv" "Javascript_Biarritz_Wilders.csv" | sort -u > javascript_biarritz_toulouse.csv
+   40  tail --help
+   50  history | tail -n 8 > history.txt
